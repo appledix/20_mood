@@ -1,22 +1,35 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-  <title>Настроение</title>
-  <script id="quotes_json" type="application/json">
-    [
-      {
-        "phrase": "Кукурузные хлопья - теперь без асбеста!",
-        "signature": "©Неизвестный маркетолог"
-      },
-      {
-        "phrase": "Собираюсь жить вечно, пока всё идёт нормально"
-      },
-      {
-        "phrase": "Если ты будешь усердно работать по 8 часов в день, то обязательно станешь боссом и начнешь работать по 12"
-      }
-    ]
-  </script>
+  <meta charset="utf-8">
+  <title>Oatmeal, sir!</title>
+  <link href="css/styles.css" type="text/css" rel="stylesheet">
+  <link rel="icon" href="img/black_oatmeal.png">
+  <link href="http://allfont.ru/allfont.css?fonts=monte-carlo" rel="stylesheet" type="text/css" />
+  <link href="http://allfont.ru/allfont.css?fonts=mon-amour-two-medium" rel="stylesheet" type="text/css"/>
 </head>
 <body>
+  <div id="wrapper">
+    <div id="header">
+      <h1>The oatmeal of the Baskervilles  <a href="#"><img src="img/white_oatmeal.png" width="50" height="50"></a></h1>
+      <hr>
+    </div>
+    <dir class="content">
+      <div id="joke-div">
+        <a name="joke-start">
+        <p>***</p>
+        <p id="joke"></p>
+        <p>***</p>
+        <a id="anchor-link" href="#joke-start"><button id="new-joke">New joke</button></a>
+        <!--<img src="img/barrymore.jpg" width="20%" height="20%">-->
+      </div>
+    </dir>
+      <footer>
+          <p id="signature">Author: <a href="https://github.com/appledix">Appledix</a> <img src="img/github_logo.png"></p>
+          <div>Icons made by <a href="http://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev" target="_blank">Nikita Golubev</a> from <a href="http://www.flaticon.com" title="Flaticon" target="_blank">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      </footer>
+      <script src="js/jquery-3.1.1.js"></script>
+      <script src="js/mood.js"></script>
+  </div>
 </body>
 </html>
