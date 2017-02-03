@@ -1,7 +1,12 @@
 # Site for the Mood
 
-[TODO. There will be project description]
-(https://appledix.github.io/20_mood)
+### Что это?
+~~Овсянка, сэр!~~
+Это одностраничный сайт, при заходе показывающий случайный анекдот про сэра Генри, Бэрримора и, конечно же, овсянку (персонажи повести "Собака Баскервилей" Конан Дойля).
+[Для вашего ознакомления, сэр.](https://appledix.github.io/20_mood)
+
+### Пользуйтесь, сэр
+Команда для скачивания git-репозитория в терминале: `git clone https://github.com/appledix/20_mood.git`
 
 # Project Goals
 
