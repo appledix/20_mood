@@ -52,19 +52,30 @@ var jokes = [
 - Нет, Ватсон, - невозмутимо отвечает Холмс. - Это сэр Генри доедает свою утреннюю овсянку. `}
 ];
 
-function getNewJoke(){
-  var jokeNumber = Math.floor(Math.random() * jokes.length);
-  var joke = jokes[jokeNumber]['joke'];
-  if ($('#joke').html() !== joke){
-    $('#joke').html(joke);
-  } else {
-    getNewJoke();
-  };
+
+function getRandomSequence(n) {
+  sequence = new Array(n);
+  for (var i = 0; i < n; i++) {
+    sequence[i] = i;
+  }
+  return sequence.sort(function(){ return 0.5-Math.random() });
+};
+
+function printJoke(jokeIndex, jokes){
+  var joke = jokes[jokeIndex]['joke'];
+  $('#joke').html(joke);
 };
 
 
+
 $(document).ready(function() {
-  //var x = [1,2,3,4,5,6].sort(function(){ return 0.5-Math.random() });
-  getNewJoke();
-  $('#new-joke').on('click', getNewJoke);
+  var numberOfJokes = jokes.length
+  var indexes = getRandomSequence(numberOfJokes);
+  printJoke(indexes.pop(), jokes);
+  $('#new-joke').on('click', function() {
+    if (indexes.length == 0) {
+      indexes = getRandomSequence(numberOfJokes);
+    }
+    printJoke(indexes.pop(), jokes);
+  });
 });

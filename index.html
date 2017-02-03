@@ -2,32 +2,31 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  <title>Oatmeal, sir!</title>
+  <title>Овсянка, сэр!</title>
   <link href="css/styles.css" type="text/css" rel="stylesheet">
   <link rel="icon" href="img/black_oatmeal.png">
 </head>
 <body>
-  <div id="wrapper">
-    <div id="header">
-      <h1>The oatmeal of the Baskervilles  <a href="#"><img src="img/white_oatmeal.png" width="50" height="50"></a></h1>
-      <hr>
+  <header>
+    <h1>Овсянка Баскервилей <a href="#"><img class="oatmeal" src="img/white_oatmeal.png" alt="white oatmeal"></a></h1>
+    <hr>
+  </header>
+  <div class="content">
+    <div id="joke-div">
+      <p class="stars">***</p>
+      <p id="joke"></p>
+      <p class="stars">***</p>
+      <form action="#joke-div">
+        <button id="new-joke" type="submit">Добавки!</button>      
+      </form>
     </div>
-    <dir class="content">
-      <div id="joke-div">
-        <a name="joke-start"></a>
-        <p>***</p>
-        <p id="joke"></p>
-        <p>***</p>
-        <a id="anchor-link" href="#joke-start"><button id="new-joke">New joke</button></a>
-        <!--<img src="img/barrymore.jpg" width="20%" height="20%">-->
-      </div>
-    </dir>
-      <footer>
-          <p id="signature">Author: <a href="https://github.com/appledix">Appledix</a> <img src="img/github_logo.png"></p>
-          <div>Icons made by <a href="http://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev" target="_blank">Nikita Golubev</a> from <a href="http://www.flaticon.com" title="Flaticon" target="_blank">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-      </footer>
-      <script src="js/jquery-3.1.1.js"></script>
-      <script src="js/mood.js"></script>
   </div>
+    <footer>
+      <hr id="footer-hr">
+      <p id="signature">Автор: <a href="https://github.com/appledix" target="_blank">Appledix</a> <img src="img/github_logo.png" alt="github"></p>
+      <div>Icons made by <a href="http://www.flaticon.com/authors/nikita-golubev" title="Nikita Golubev" target="_blank">Nikita Golubev</a> and <a href="http://www.flaticon.com/authors/iconnice" title="Iconnice" target="_blank">Iconnice</a> from <a href="http://www.flaticon.com" title="Flaticon" target="_blank">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+    </footer>
+    <script src="js/jquery-3.1.1.js"></script>
+    <script src="js/mood.js"></script>
 </body>
 </html>

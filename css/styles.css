@@ -1,3 +1,8 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
 @font-face {
   font-family: Monte-Carlo;
   src: url(../fonts/monte-carlo.ttf); 
@@ -8,82 +13,90 @@
   src: url(../fonts/mon-amour-two-medium.ttf); 
 }
 
-* {
-	padding: 0;
-	margin: 0;
+body {
+  border-style: solid;
+  border-width: 81px 79px 88px;
+  border-image: url(../img/white_borders.png) 81 79 88 fill stretch;
+  background-color: black;
+	background-image: url(../img/background.jpg);
 }
 
-body {
-	background-image: url(../img/background.jpg);
+h1 {
+  font-family: 'Monte-Carlo', arial;
+  color: white;
 }
 
 h1, p {
 	font-size: 30px;
-	color: white;
 }
 
-h1, button {
-	font-family: 'Monte-Carlo', arial;
+header {
+  text-align: center;
+  padding: 10px;
+  height: 60px;
 }
 
 hr { 
+  margin: 15px;
   border-color: white; 
 } 
 
-p {
+p, footer {
 	font-family: 'Mon Amour Two Medium', arial;
 }
 
 footer {
-  font-family: 'Mon Amour Two Medium', arial;
   font-size: 15px;
   margin-top: 10%;
   text-align: center;
   color: grey;
 }
 
-hr {
-  margin: 15px;
-}
-
 a:link, a:visited {
   color: grey;
 }
 
-#wrapper {
-	border-style: solid;
-	border-width: 81px 79px 88px;
-	border-image: url(../img/white_borders.png) 81 79 88 fill stretch;
+.oatmeal {
+  width: 50px;
+  height: 50px;
 }
 
-#header {
-	text-align: center;
-	padding: 10px;
-	height: 60px;
+.content {
+  padding: 7% 0;
+}
+
+.stars, #joke {
+  color: white;
 }
 
 #new-joke {
-  font-size: 25px;
-  color: black;
-  height: 80px;
+  background-image: url(../img/button.png);
+  width: 374px;
+  height: 132px;
+  font-size: 30px;
+  font-family: 'Mon Amour Two Medium', arial;
+  font-weight: bolder;
+  color: gray;
   display:block;
   position: relative;
-  border: 1px solid white;
-  border-radius: 10px;
+  border: 1px solid grey;
+  border-radius: 7px;
   margin:30px auto 0;
 }
 
 #joke-div {
-    text-align: center;
-    margin-top: 3%;
-    margin:3% auto 0;
-    width: 40%;
-    padding: 20px;
-    border-radius: 10px;
+  text-align: center;
+  margin: 0 auto;
+  width: 40%;
+  padding: 20px;
 }
 
 #anchor-link {
   text-decoration: none;
+}
+
+#footer-hr {
+  margin-bottom: 5%;
 }
 
 #signature {
