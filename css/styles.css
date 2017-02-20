@@ -84,6 +84,10 @@ a:link, a:visited {
   margin:30px auto 0;
 }
 
+#new-joke:hover {
+  cursor: pointer;
+}
+
 #joke-div {
   text-align: center;
   margin: 0 auto;
