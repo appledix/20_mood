@@ -69,7 +69,7 @@ function printJoke(jokeIndex, jokes){
 
 
 $(document).ready(function() {
-  var numberOfJokes = jokes.length
+  var numberOfJokes = jokes.length;
   var indexes = getRandomSequence(numberOfJokes);
   printJoke(indexes.pop(), jokes);
   $('#new-joke').on('click', function() {
