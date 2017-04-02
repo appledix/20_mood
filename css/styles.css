@@ -21,28 +21,10 @@ body {
 	background-image: url(../img/background.jpg);
 }
 
-h1 {
-  font-family: 'Monte-Carlo', arial;
-  color: white;
-}
-
-h1, p {
-	font-size: 30px;
-}
-
 header {
   text-align: center;
   padding: 10px;
   height: 60px;
-}
-
-hr { 
-  margin: 15px;
-  border-color: white; 
-} 
-
-p, footer {
-	font-family: 'Mon Amour Two Medium', arial;
 }
 
 footer {
@@ -52,13 +34,22 @@ footer {
   color: grey;
 }
 
-a:link, a:visited {
-  color: grey;
-}
-
 .oatmeal {
   width: 50px;
   height: 50px;
+}
+
+.title {
+  font-family: 'Monte-Carlo', arial;
+  color: white;
+}
+
+.title, .text {
+	font-size: 30px;
+}
+
+.text, footer {
+  font-family: 'Mon Amour Two Medium', arial;
 }
 
 .content {
@@ -67,6 +58,15 @@ a:link, a:visited {
 
 .stars, #joke {
   color: white;
+}
+
+.separating-line { 
+  margin: 15px;
+  border-color: white; 
+}
+
+.footer-hyperlink:link, .footer-hyperlink:visited {
+  color: grey;
 }
 
 #new-joke {
