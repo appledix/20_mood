@@ -14,10 +14,10 @@
   <div class="content">
     <div id="joke-div">
       <p class="text stars">***</p>
-      <p class="text" id="joke"></p>
+      <p class="text" id="js-joke"></p>
       <p class="text stars">***</p>
       <form action="#joke-div">
-        <button id="new-joke" type="submit">Добавки!</button>      
+        <button id="js-new-joke" type="submit">Добавки!</button>      
       </form>
     </div>
   </div>
@@ -32,14 +32,14 @@
     <script src="js/shuffleArray.js"></script>
     <script>
       function printJoke(joke) {
-        $('#joke').html(joke);
+        $('#js-joke').html(joke);
       };
       $(document).ready(function() {
         $.getJSON('jokes.json', function(json) {
           var jokesCollection = json['jokes'];
           var jokesForPrinting = shuffle(Array.from(jokesCollection));
           printJoke(jokesForPrinting.pop()['joke']);
-          $('#new-joke').on('click', function() {
+          $('#js-new-joke').on('click', function() {
             if (jokesForPrinting.length == 0) {
               jokesForPrinting = shuffle(Array.from(jokesCollection));
             }
