@@ -8,42 +8,42 @@
   src: url(../fonts/mon-amour-two-medium.ttf); 
 }
 
-body {
+.wrapper {
+  background-color: black;
+  background-image: url(../img/background.jpg);
   border-style: solid;
   border-width: 81px 79px 88px;
   border-image: url(../img/white_borders.png) 81 79 88 fill stretch;
-  background-color: black;
-	background-image: url(../img/background.jpg);
 }
 
-header {
-  text-align: center;
-  padding: 10px;
+.top-section {
   height: 60px;
+  padding: 10px;
+  text-align: center;
 }
 
-footer {
+.bottom-section {
+  color: grey;
   font-size: 15px;
   margin-top: 10%;
   text-align: center;
-  color: grey;
 }
 
 .oatmeal {
-  width: 50px;
   height: 50px;
+  width: 50px;
 }
 
 .title {
   font-family: 'Monte-Carlo', arial;
-  color: white;
 }
 
 .title, .text {
+  color: white;
 	font-size: 30px;
 }
 
-.text, footer {
+.text, .bottom-section {
   font-family: 'Mon Amour Two Medium', arial;
 }
 
@@ -51,56 +51,50 @@ footer {
   padding: 7% 0;
 }
 
-.stars, #js-joke {
-  color: white;
-}
-
 .separating-line { 
   margin: 15px;
   border-color: white; 
+}
+
+.footer-hr {
+  margin-bottom: 5%;
 }
 
 .footer-hyperlink:link, .footer-hyperlink:visited {
   color: grey;
 }
 
-#js-new-joke {
+.joke-div {
+  margin: 0 auto;
+  padding: 20px;
+  width: 40%;
+  text-align: center;
+}
+
+.signature {
+  font-weight: bolder;
+}
+
+.new-joke-btn {
   background-image: url(../img/button.png);
-  width: 374px;
-  height: 132px;
+  border: 1px solid grey;
+  border-radius: 7px;
+  color: gray;
+  display:block;
   font-size: 30px;
   font-family: 'Mon Amour Two Medium', arial;
   font-weight: bolder;
-  color: gray;
-  display:block;
-  position: relative;
-  border: 1px solid grey;
-  border-radius: 7px;
+  height: 132px;
   margin:30px auto 0;
+  position: relative;
+  width: 374px;
+
 }
 
-#js-new-joke:hover {
+.new-joke-btn:hover {
   cursor: pointer;
 }
 
-#joke-div {
-  text-align: center;
-  margin: 0 auto;
-  width: 40%;
-  padding: 20px;
-}
-
-#anchor-link {
-  text-decoration: none;
-}
-
-#footer-hr {
-  margin-bottom: 5%;
-}
-
-#signature {
-  font-weight: bolder;
-}
 
 
 
